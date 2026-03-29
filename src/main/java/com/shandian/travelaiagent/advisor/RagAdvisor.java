@@ -20,14 +20,14 @@ public class RagAdvisor {
     public static Advisor createRagAdvisor() {
         // 1. 构建 API 客户端
         DashScopeApi dashScopeApi = DashScopeApi.builder()
-                .apiKey("你的apikey")
+                .apiKey("xxxxx")
                 .build();
 
         // 2. 构建检索器 (使用知识库 ID)
         DocumentRetriever documentRetriever = new DashScopeDocumentRetriever(
                 dashScopeApi,
                 DashScopeDocumentRetrieverOptions.builder()
-                        .withIndexName("你的阿里云百炼知识库名字") // 这里填知识库名字
+                        .withIndexName("xxxxx") // 这里填知识库名字
                         .build()
         );
 

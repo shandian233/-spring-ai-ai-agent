@@ -134,7 +134,12 @@ public abstract class BaseAgent {
                     String result = "Step " + stepNumber + ": " + stepResult;
                     results.add(result);
                     // 输出当前每一步的结果到 SSE
-                    sseEmitter.send(result);
+                    //本来的一行代码 sseEmitter.send(result);
+                    try {
+                        sseEmitter.send(result);
+                    } catch (IllegalStateException e) {
+                        log.warn("SSE emitter already completed, ignoring");
+                    }
                 }
                 // 检查是否超出步骤限制
                 if (currentStep >= maxSteps) {

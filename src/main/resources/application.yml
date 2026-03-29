@@ -8,7 +8,8 @@ spring:
     password: 12345
   ai:
     dashscope:
-      apikey: "你的apikey"
+      apikey: "sk-xxxxx"
+
       chat:
         options:
           model: qwen-max
@@ -41,4 +42,4 @@ knife4j:
     language: zh_cn
 # 谷歌searchAPI
 search-api:
-  api-key: 你的key
+  api-key: xxxxxxx
