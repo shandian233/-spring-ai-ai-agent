@@ -1,4 +1,4 @@
-<img width="1281" height="697" alt="image" src="https://github.com/user-attachments/assets/0c035ed4-9ae8-44ca-b469-fd49a1865c74" />---
+
 Travel AI Agent
 智能旅游咨询助手 - 基于 Spring AI + Vue3 的 AI Agent 应用
 项目简介
